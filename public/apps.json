@@ -36,7 +36,7 @@
    "room": "study",
    "name": {
     "en": "Three Things",
-    "ja": "Three Things"
+    "ja": "今日の3つ"
    },
    "blurb": {
     "en": "At most three must-do tasks for today.",
@@ -94,7 +94,7 @@
    "room": "study",
    "name": {
     "en": "My Common Phrases",
-    "ja": "定型ぶん"
+    "ja": "定型文"
    },
    "blurb": {
     "en": "Reusable phrases, ready to copy.",
@@ -210,7 +210,7 @@
    "room": "study",
    "name": {
     "en": "Character Count",
-    "ja": "文字数はかる"
+    "ja": "文字数カウント"
    },
    "blurb": {
     "en": "Count characters without an account.",
@@ -326,7 +326,7 @@
    "room": "study",
    "name": {
     "en": "To-Do Board",
-    "ja": "かんばん紙"
+    "ja": "かんばんボード"
    },
    "blurb": {
     "en": "A simple drag-and-drop task board.",
@@ -413,7 +413,7 @@
    "room": "workshop",
    "name": {
     "en": "Long Shot",
-    "ja": "Long Shot"
+    "ja": "スクショつなぎ"
    },
    "blurb": {
     "en": "Stitch screenshots you already took into one tall image.",
@@ -442,7 +442,7 @@
    "room": "workshop",
    "name": {
     "en": "Shrink Image",
-    "ja": "画像しぼる"
+    "ja": "画像を軽く"
    },
    "blurb": {
     "en": "Make an image smaller before you send it.",
@@ -501,7 +501,7 @@
    "room": "workshop",
    "name": {
     "en": "Photo Sharpener",
-    "ja": "くっきり"
+    "ja": "くっきり写真"
    },
    "blurb": {
     "en": "Enlarge small or blurry photos 2x or 4x, sharper.",
@@ -619,7 +619,7 @@
    "room": "workshop",
    "name": {
     "en": "Stamp & Sign",
-    "ja": "印を押す"
+    "ja": "はんこ押し"
    },
    "blurb": {
     "en": "Put a seal or signature on a PDF or photo.",
@@ -764,7 +764,7 @@
    "room": "workshop",
    "name": {
     "en": "Text on Photo",
-    "ja": "文字のせ"
+    "ja": "文字入れ"
    },
    "blurb": {
     "en": "Put words on a photo.",
@@ -793,7 +793,7 @@
    "room": "workshop",
    "name": {
     "en": "Eraser",
-    "ja": "消しゴム"
+    "ja": "けしゴム"
    },
    "blurb": {
     "en": "Rub out things you don't want in a photo.",
@@ -822,7 +822,7 @@
    "room": "workshop",
    "name": {
     "en": "Cutout",
-    "ja": "切り抜き"
+    "ja": "きりぬき"
    },
    "blurb": {
     "en": "Cut a person or thing out of the background.",
@@ -851,7 +851,7 @@
    "room": "workshop",
    "name": {
     "en": "Color Mix",
-    "ja": "色あわせ"
+    "ja": "いろあわせ"
    },
    "blurb": {
     "en": "Find and match colours.",
@@ -938,7 +938,7 @@
    "room": "kitchen",
    "name": {
     "en": "Trash Duty",
-    "ja": "ごみ当番"
+    "ja": "ごみの日"
    },
    "blurb": {
     "en": "Whose turn it is to take the trash out.",
@@ -1083,7 +1083,7 @@
    "room": "kitchen",
    "name": {
     "en": "Count Once",
-    "ja": "カウント一発"
+    "ja": "カウンター"
    },
    "blurb": {
     "en": "A big tap counter.",
@@ -1199,7 +1199,7 @@
    "room": "lounge",
    "name": {
     "en": "One-Tap Ask",
-    "ja": "ワンタップ質問"
+    "ja": "ひと押し質問"
    },
    "blurb": {
     "en": "Save a question, ask it with one tap.",
@@ -1287,7 +1287,7 @@
    "room": "lounge",
    "name": {
     "en": "Simple Teleprompter",
-    "ja": "読み上げ板"
+    "ja": "カンペ"
    },
    "blurb": {
     "en": "A scrolling script for talks and videos.",
@@ -1316,7 +1316,7 @@
    "room": "lounge",
    "name": {
     "en": "Breathe",
-    "ja": "息を吸う"
+    "ja": "いきをすう"
    },
    "blurb": {
     "en": "A calm breathing guide.",
