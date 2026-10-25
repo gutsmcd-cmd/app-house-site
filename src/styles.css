@@ -109,8 +109,8 @@ footer{margin-top:auto;padding:18px;text-align:center;font-size:.85rem;opacity:.
 .spot .orb{position:absolute;right:6px;top:6px;width:14px;height:14px;border-radius:50%;background:#ffe56b;box-shadow:0 0 14px 4px #ffe56b;animation:pulse 1.6s infinite}
 .dark .housewrap .art img{filter:brightness(.3)}.dark .spot.hasglow{box-shadow:inset 0 0 0 2px #ffe56b88,0 0 18px #ffe56b66}
 .doorpick .art{border:3px solid transparent;transition:border-color .4s}.doorpick.lit .art{border-color:var(--pink)}
-.st-clean .art img{filter:saturate(.6) contrast(1.05)}.st-fancy .art img{filter:saturate(1.5) drop-shadow(0 0 0 #000)}.st-fancy .art{box-shadow:0 0 0 6px #d4a017,0 10px 30px #c8486e55}
-.st-drawn .art .color{opacity:.55}.st-blueprint .art{background:#1d4f91}.st-blueprint .art .color{opacity:0}.st-blueprint .art .line{filter:invert(1) sepia(1) hue-rotate(170deg) saturate(3);mix-blend-mode:screen}
+.st-fancy .art img{filter:saturate(1.5) drop-shadow(0 0 0 #000)}.st-fancy .art{box-shadow:0 0 0 6px #d4a017,0 10px 30px #c8486e55}
+.st-drawn .art .color{opacity:0!important}.st-drawn .art .line{filter:none}.st-blueprint .art{background:#1d4f91}.st-blueprint .art .color{opacity:0}.st-blueprint .art .line{filter:invert(1) sepia(1) hue-rotate(170deg) saturate(3);mix-blend-mode:screen}
 .st-angled .art{transform:rotateY(-14deg) rotateX(5deg)}
 .season-halloween .housewrap{background:#2a1f3d}
 /* v2: bar buttons, bold selection, hanging sign */

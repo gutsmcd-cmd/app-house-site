@@ -21,7 +21,7 @@ const T = {
   soonNote: { en: 'Still being built in the attic. Check back soon!', ja: '屋根裏で制作中。もう少し待ってね！' },
   suggest: { en: 'Suggest an app', ja: 'アプリを提案' },
 };
-const STYLES = [['drawn', { en: 'Drawn', ja: '手描き' }], ['clean', { en: 'Clean', ja: 'すっきり' }], ['fancy', { en: 'Fancy', ja: 'ゴージャス' }], ['blueprint', { en: 'Blueprint', ja: '設計図' }], ['angled', { en: 'Angled', ja: 'ななめ' }]];
+const STYLES = [['clean', { en: 'Colour', ja: 'カラー' }], ['drawn', { en: 'Drawn', ja: '手描き' }], ['fancy', { en: 'Fancy', ja: 'ゴージャス' }], ['blueprint', { en: 'Blueprint', ja: '設計図' }], ['angled', { en: 'Angled', ja: 'ななめ' }]];
 const SEASONS = [['auto', { en: 'Auto (by date)', ja: '自動（日付）' }], ['off', { en: 'Off', ja: 'なし' }], ['sakura', { en: 'Sakura', ja: '桜' }], ['halloween', { en: 'Halloween', ja: 'ハロウィン' }], ['christmas', { en: 'Christmas', ja: 'クリスマス' }], ['newyear', { en: 'New Year', ja: 'お正月' }]];
 function dateSeason(d = new Date()) {
   const m = d.getMonth() + 1, day = d.getDate();
@@ -208,7 +208,7 @@ function App() {
   const route = useHash();
   const [data, setData] = useState(null);
   const [lang, setLangS] = useState(ls('lang', navigator.language?.startsWith('ja') ? 'ja' : 'en'));
-  const [p, setP] = useState({ filter: 'all', style: ls('style', 'drawn'), seasonPick: ls('season', 'auto') });
+  const [p, setP] = useState({ filter: 'all', style: ls('style', 'clean'), seasonPick: ls('season', 'auto') });
   const setLang = (l) => { setLangS(l); save('lang', l); };
   const setPref = (k, v) => { setP((o) => ({ ...o, [k]: v })); if (k === 'style') save('style', v); if (k === 'seasonPick') save('season', v); };
   useEffect(() => { fetch(BASE + 'apps.json').then((r) => r.json()).then(setData); }, []);
