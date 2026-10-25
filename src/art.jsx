@@ -6,12 +6,12 @@ export const SPOTS = {
 };
 export function ArtHouse({ kind, lit, active, onPick, glow = {}, names = {}, spots = true }) {
   const k = kind === 'ja' ? 'japanese' : 'western';
-  return <div class={'art' + (lit ? ' lit' : '')}>
+  return <div class={'art' + (lit ? ' lit' : '') + (active ? ' hassel' : '')}>
     <img class="line" src={BASE + 'art/' + k + '-line.webp'} alt="" width="1000" height="667" />
     <img class="color" src={BASE + 'art/' + k + '-color.webp'} alt={kind === 'ja' ? '日本の家' : 'Western house'} width="1000" height="667" />
     {spots && Object.entries(SPOTS[kind]).map(([id, [x, y, w, h]]) =>
       <button class={'spot' + (active === id ? ' on' : '') + (glow[id] ? ' hasglow' : '')} style={{ left: x + '%', top: y + '%', width: w + '%', height: h + '%' }} onClick={() => onPick(id)} aria-label={names[id] || id}>
-        <span class="slabel">{names[id] || id}</span>{glow[id] ? <i class="orb" /> : null}
+        {active === id ? <span class="sign"><i class="str l" /><i class="str r" /><b>{names[id] || id}</b></span> : <span class="slabel">{names[id] || id}</span>}{glow[id] ? <i class="orb" /> : null}
       </button>)}
   </div>;
 }

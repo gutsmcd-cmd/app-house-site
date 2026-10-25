@@ -17,7 +17,7 @@ const T = {
   open: { en: 'Open in new tab', ja: '新しいタブで開く' }, install: { en: 'Install as app', ja: 'アプリとして入れる' },
   apk: { en: 'Download Android app', ja: 'Androidアプリをダウンロード' }, ext: { en: 'Get the Chrome extension', ja: 'Chrome拡張を入手' },
   how: { en: 'How to use it', ja: '使い方' }, back: { en: '← Back to the house', ja: '← 家に戻る' },
-  offline: { en: 'Take the house offline', ja: '家をオフラインに' }, offOn: { en: 'House saved for offline ✓', ja: 'オフライン保存ずみ ✓' },
+  offline: { en: 'Take the house offline', ja: '家をオフラインにする' }, offOn: { en: 'House saved for offline ✓', ja: 'オフライン保存ずみ ✓' },
   soonNote: { en: 'Still being built in the attic. Check back soon!', ja: '屋根裏で制作中。もう少し待ってね！' },
   suggest: { en: 'Suggest an app', ja: 'アプリを提案' },
 };
@@ -82,10 +82,11 @@ function Magnifier({ on }) {
   return <div class="mag" style={{ '--mx': p.x + 'px', '--my': p.y + 'px' }}><div class="lens" /></div>;
 }
 
-function HouseView({ data, lang, room, prefs }) {
-  const [filter, setFilter] = useState('all');
+function HouseView({ data, lang, room, prefs, setPref }) {
+  const filter = prefs.filter, setFilter = (f) => setPref('filter', f);
+  const match = (a) => filter === 'awesome' ? a.awesome : filter === 'unique' ? a.unique : shine(a);
   const names = Object.fromEntries(data.rooms.map((r) => [r.id, r.name[lang]]));
-  const glow = {}; data.apps.forEach((a) => { if (shine(a)) glow[a.room] = (glow[a.room] || 0) + 1; });
+  const glow = {}; data.apps.forEach((a) => { if (match(a)) glow[a.room] = (glow[a.room] || 0) + 1; });
   const FOY = { id: 'foyer', name: { en: 'Foyer', ja: '玄関' }, lead: { en: 'Welcome in! The house favourites: every Awesome or Unique app, all in one spot.', ja: 'いらっしゃい！家の自慢：「すごい」「めずらしい」アプリをまとめて。' } };
   names.foyer = FOY.name[lang];
   const R = room === 'foyer' || !room ? FOY : data.rooms.find((r) => r.id === room) || FOY;
@@ -93,23 +94,22 @@ function HouseView({ data, lang, room, prefs }) {
   const best = data.apps.filter((a) => (filter === 'awesome' ? a.awesome : filter === 'unique' ? a.unique : false));
   return <main class="split">
     <section class={'housewrap st-' + prefs.style}>
-      <ArtHouse kind={lang} lit active={R.id} onPick={(id) => go('/house/' + id)} glow={prefs.dark ? glow : {}} names={names} />
+      <ArtHouse kind={lang} lit active={R.id} onPick={(id) => go('/house/' + id)} glow={filter !== 'all' ? glow : {}} names={names} />
       <Season s={prefs.season} />
-      <p class="hint">{T.best[lang]}</p>
+      <p class="hint">{filter === 'all' ? (lang === 'ja' ? '「すごい」「めずらしい」を選ぶと、家の電気が消えてその部屋が光ります' : 'Pick Awesome or Unique: the lights go off and those rooms glow') : T.best[lang]}</p>
     </section>
     <section class={'scene room-' + R.id}>
       <header class="scenehead">
         <div><p class="kicker">{lang === 'ja' ? '部屋' : 'Room'}</p><h2>{R.name[lang]}</h2><p class="lead">{R.lead[lang]}</p></div>
         <div class="chips">{['all', 'awesome', 'unique'].map((f) => <button class={'chip' + (filter === f ? ' on' : '')} onClick={() => setFilter(f)}>{f === 'all' ? T.all[lang] : f === 'awesome' ? '★ ' + T.awesome[lang] : '◆ ' + T.unique[lang]}</button>)}</div>
       </header>
-      {filter !== 'all' ? <div class="bestlist">{best.map((a) => <AppObj a={a} lang={lang} showRoom={names[a.room]} />)}</div> :
-        <div class="objects">{apps.map((a) => <AppObj a={a} lang={lang} showRoom={R.id === 'foyer' ? names[a.room] : null} />)}<div class="floor" /></div>}
+      {<div class="objects">{apps.map((a) => <AppObj a={a} lang={lang} lit={filter !== 'all' && match(a)} showRoom={R.id === 'foyer' ? names[a.room] : null} />)}<div class="floor" /></div>}
     </section>
   </main>;
 }
 
-function AppObj({ a, lang, showRoom }) {
-  return <button class={'obj' + (shine(a) ? ' shine' : '') + (a.soon ? ' dusty' : '')} onClick={() => go('/app/' + a.id)}>
+function AppObj({ a, lang, showRoom, lit }) {
+  return <button class={'obj' + (lit ? ' shine' : '') + (a.soon ? ' dusty' : '')} onClick={() => go('/app/' + a.id)}>
     <span class="ico">{a.icon}</span>
     <span class="oname">{a.name[lang]}</span>
     <span class="oblurb">{a.blurb[lang]}</span>
@@ -164,32 +164,43 @@ function InstallHelp({ lang, url }) {
 }
 
 function Bar({ lang, setLang, prefs, setPref, route }) {
-  const [menu, setMenu] = useState(false);
+  const [open, setOpen] = useState(null);
   const [off, setOff] = useState(ls('offline', '') === '1');
+  const ja = lang === 'ja';
+  const tg = (k) => setOpen(open === k ? null : k);
   const takeOffline = async () => {
     if (!('serviceWorker' in navigator)) return;
     const reg = await navigator.serviceWorker.register(BASE + 'sw.js');
     await navigator.serviceWorker.ready;
     const d = await (await fetch(BASE + 'apps.json')).json();
     const assets = [...document.querySelectorAll('script[src],link[rel=stylesheet]')].map((e) => e.src || e.href);
-    const list = [BASE, BASE + 'index.html', BASE + 'apps.json', BASE + 'icon.svg', BASE + 'manifest.webmanifest', ...assets, ...d.apps.filter((a) => a.kind === 'web' && !a.soon).map((a) => BASE + 'shots/' + a.id + '.webp')];
+    const list = [BASE, BASE + 'index.html', BASE + 'apps.json', BASE + 'icon.svg', BASE + 'manifest.webmanifest', ...assets, ...['western', 'japanese'].flatMap((k) => [BASE + 'art/' + k + '-line.webp', BASE + 'art/' + k + '-color.webp']), ...d.apps.filter((a) => a.kind === 'web' && !a.soon).map((a) => BASE + 'shots/' + a.id + '.webp')];
     (reg.active || navigator.serviceWorker.controller).postMessage({ cache: list });
     setOff(true); save('offline', '1');
   };
-  return <header class={'bar' + (route === '/' ? ' clear' : '')}>
+  const goOnline = async () => {
+    if ('serviceWorker' in navigator) { const reg = await navigator.serviceWorker.getRegistration(BASE); reg?.active?.postMessage({ clear: true }); }
+    setOff(false); save('offline', '');
+  };
+  const home = route === '/';
+  return <header class={'bar' + (home ? ' clear' : '')}>
     <a class="brand" href="#/">M@ Apps</a>
-    {route !== '/' && <div class="tools">
-      <button class={'tog' + (prefs.dark ? ' on' : '')} onClick={() => setPref('dark', !prefs.dark)}>💡 {prefs.dark ? T.lightsOn[lang] : T.lights[lang]}</button>
-      <button class={'tog' + (prefs.mag ? ' on' : '')} onClick={() => setPref('mag', !prefs.mag)}>🔍 {T.magnify[lang]}</button>
-      <button class="tog" onClick={() => setMenu(!menu)}>🏠 ⚙</button>
+    {!home && <div class="tools">
+      <div class="pop"><button class={'tog' + (open === 'style' ? ' on' : '')} onClick={() => tg('style')}>🎨 {T.style[lang]}</button>
+        {open === 'style' && <div class="menu">
+          <p class="mh">{T.style[lang]}</p>
+          <div class="stylegrid">{STYLES.map(([v, n]) => <button class={'chip' + (prefs.style === v ? ' on' : '')} onClick={() => setPref('style', v)}>{n[lang]}</button>)}</div>
+          <p class="mh">{T.season[lang]}</p>
+          <div class="stylegrid">{SEASONS.map(([v, n]) => <button class={'chip' + (prefs.seasonPick === v ? ' on' : '')} onClick={() => setPref('seasonPick', v)}>{n[lang]}</button>)}</div>
+        </div>}</div>
+      <div class="pop"><button class={'tog' + (off ? ' on' : '')} onClick={() => tg('off')}>📴 {T.offline[lang]}</button>
+        {open === 'off' && <div class="menu">
+          <p>{ja ? 'このサイトを端末に保存して、インターネットなしでも開けるようにします。アプリの紹介や画面もオフラインで見られます。（各アプリ自体は、一度開けばもともとオフラインで動きます）' : 'Saves this site to your device so it opens even without internet: the house, app previews and screenshots. (Each app already works offline once you have opened it.)'}</p>
+          {off ? <><p class="ok">{T.offOn[lang]}</p><button class="tog" onClick={goOnline}>{ja ? '保存を消す' : 'Remove saved copy'}</button></> : <button class="btn green" onClick={takeOffline}>{ja ? '保存する' : 'Save for offline'}</button>}
+        </div>}</div>
+      <a class="tog" href={'mailto:gutsmcd@gmail.com?subject=' + encodeURIComponent(ja ? 'App House アプリの提案' : 'App House suggestion')}>✉ {T.suggest[lang]}</a>
     </div>}
-    <div class="langs"><button class={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>English</button><button class={lang === 'ja' ? 'on' : ''} onClick={() => setLang('ja')}>日本語</button></div>
-    {menu && <div class="menu">
-      <label>{T.style[lang]}<select value={prefs.style} onChange={(e) => setPref('style', e.target.value)}>{STYLES.map(([v, n]) => <option value={v}>{n[lang]}</option>)}</select></label>
-      <label>{T.season[lang]}<select value={prefs.seasonPick} onChange={(e) => setPref('seasonPick', e.target.value)}>{SEASONS.map(([v, n]) => <option value={v}>{n[lang]}</option>)}</select></label>
-      <button class="tog" onClick={takeOffline} disabled={off}>{off ? T.offOn[lang] : '📴 ' + T.offline[lang]}</button>
-      <a class="tog" href={'mailto:gutsmcd@gmail.com?subject=' + encodeURIComponent(lang === 'ja' ? 'App House アプリの提案' : 'App House suggestion')}>✉ {T.suggest[lang]}</a>
-    </div>}
+    {!home && <div class="langs"><button class={lang === 'en' ? 'on' : ''} onClick={() => setLang('en')}>English</button><button class={lang === 'ja' ? 'on' : ''} onClick={() => setLang('ja')}>日本語</button></div>}
   </header>;
 }
 
@@ -197,7 +208,7 @@ function App() {
   const route = useHash();
   const [data, setData] = useState(null);
   const [lang, setLangS] = useState(ls('lang', navigator.language?.startsWith('ja') ? 'ja' : 'en'));
-  const [p, setP] = useState({ dark: false, mag: false, style: ls('style', 'drawn'), seasonPick: ls('season', 'auto') });
+  const [p, setP] = useState({ filter: 'all', style: ls('style', 'drawn'), seasonPick: ls('season', 'auto') });
   const setLang = (l) => { setLangS(l); save('lang', l); };
   const setPref = (k, v) => { setP((o) => ({ ...o, [k]: v })); if (k === 'style') save('style', v); if (k === 'seasonPick') save('season', v); };
   useEffect(() => { fetch(BASE + 'apps.json').then((r) => r.json()).then(setData); }, []);
@@ -207,13 +218,12 @@ function App() {
   const parts = route.split('/').filter(Boolean);
   let view;
   if (!data) view = <main class="loading">🏠…</main>;
-  else if (parts[0] === 'house') view = <HouseView data={data} lang={lang} room={parts[1]} prefs={prefs} />;
+  else if (parts[0] === 'house') view = <HouseView data={data} lang={lang} room={parts[1]} prefs={prefs} setPref={setPref} />;
   else if (parts[0] === 'app') view = <Preview data={data} lang={lang} id={parts[1]} />;
   else view = <FrontDoor setLang={setLang} />;
-  return <div class={'site' + (p.dark ? ' dark' : '') + (p.mag ? ' magon' : '') + ' season-' + season}>
+  return <div class={'site' + (p.filter !== 'all' && parts[0] === 'house' ? ' dark' : '') + ' season-' + season}>
     <Bar lang={lang} setLang={setLang} prefs={prefs} setPref={setPref} route={parts.length ? route : '/'} />
     {view}
-    <Magnifier on={p.mag} />
     <footer>{lang === 'ja' ? '無料・広告なし・ログインなし。全部オフラインで動く。' : 'Free · no ads · no logins · every app works offline.'} · <a href="https://github.com/gutsmcd-cmd/app-house-site">GitHub</a></footer>
   </div>;
 }
