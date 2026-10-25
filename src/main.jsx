@@ -188,7 +188,7 @@ function Bar({ lang, setLang, prefs, setPref, route }) {
       <label>{T.style[lang]}<select value={prefs.style} onChange={(e) => setPref('style', e.target.value)}>{STYLES.map(([v, n]) => <option value={v}>{n[lang]}</option>)}</select></label>
       <label>{T.season[lang]}<select value={prefs.seasonPick} onChange={(e) => setPref('seasonPick', e.target.value)}>{SEASONS.map(([v, n]) => <option value={v}>{n[lang]}</option>)}</select></label>
       <button class="tog" onClick={takeOffline} disabled={off}>{off ? T.offOn[lang] : '📴 ' + T.offline[lang]}</button>
-      <a class="tog" href="https://github.com/gutsmcd-cmd/app-house-site/issues/new" target="_blank" rel="noopener">✉ {T.suggest[lang]}</a>
+      <a class="tog" href={'mailto:gutsmcd@gmail.com?subject=' + encodeURIComponent(lang === 'ja' ? 'App House アプリの提案' : 'App House suggestion')}>✉ {T.suggest[lang]}</a>
     </div>}
   </header>;
 }
