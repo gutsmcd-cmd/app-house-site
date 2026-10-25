@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import { WesternHouse, JapaneseHouse } from './houses.jsx';
+import { ArtHouse } from './art.jsx';
 import './styles.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -60,15 +60,15 @@ function Season({ s }) {
 
 function FrontDoor({ setLang }) {
   const [hov, setHov] = useState(null);
-  const enter = (l) => { setLang(l); go('/house/study'); };
+  const enter = (l) => { setLang(l); go('/house/foyer'); };
   return <main class="door">
     <h1 class="logo">M@ Apps</h1>
     <p class="tag"><span lang="en">… a family of <u>TRULY</u> free apps :D</span> <span lang="ja">本当に無料のアプリたち</span></p>
     <div class="doors">
-      {[['ja', '日本語', JapaneseHouse], ['en', 'English', WesternHouse]].map(([l, label, H]) =>
+      {[['ja', '日本語'], ['en', 'English']].map(([l, label]) =>
         <button class={'doorpick' + (hov === l ? ' lit' : '')} onMouseEnter={() => setHov(l)} onMouseLeave={() => setHov(null)} onFocus={() => setHov(l)} onClick={() => enter(l)}>
           <span class="langbtn">{label}</span>
-          <H mini names={{}} />
+          <ArtHouse kind={l} lit={hov === l} spots={false} />
         </button>)}
     </div>
     <ul class="promise">{T.promise.en.map((p, i) => <li>{p}<small>{T.promise.ja[i]}</small></li>)}</ul>
@@ -86,13 +86,14 @@ function HouseView({ data, lang, room, prefs }) {
   const [filter, setFilter] = useState('all');
   const names = Object.fromEntries(data.rooms.map((r) => [r.id, r.name[lang]]));
   const glow = {}; data.apps.forEach((a) => { if (shine(a)) glow[a.room] = (glow[a.room] || 0) + 1; });
-  const R = data.rooms.find((r) => r.id === room) || data.rooms[1];
-  let apps = data.apps.filter((a) => a.room === R.id);
+  const FOY = { id: 'foyer', name: { en: 'Foyer', ja: '玄関' }, lead: { en: 'Welcome in! The house favourites: every Awesome or Unique app, all in one spot.', ja: 'いらっしゃい！家の自慢：「すごい」「めずらしい」アプリをまとめて。' } };
+  names.foyer = FOY.name[lang];
+  const R = room === 'foyer' || !room ? FOY : data.rooms.find((r) => r.id === room) || FOY;
+  let apps = R.id === 'foyer' ? data.apps.filter(shine) : data.apps.filter((a) => a.room === R.id);
   const best = data.apps.filter((a) => (filter === 'awesome' ? a.awesome : filter === 'unique' ? a.unique : false));
-  const H = lang === 'ja' ? JapaneseHouse : WesternHouse;
   return <main class="split">
     <section class={'housewrap st-' + prefs.style}>
-      <H active={R.id} onPick={(id) => go('/house/' + id)} glow={prefs.dark ? glow : {}} names={names} />
+      <ArtHouse kind={lang} lit active={R.id} onPick={(id) => go('/house/' + id)} glow={prefs.dark ? glow : {}} names={names} />
       <Season s={prefs.season} />
       <p class="hint">{T.best[lang]}</p>
     </section>
@@ -102,7 +103,7 @@ function HouseView({ data, lang, room, prefs }) {
         <div class="chips">{['all', 'awesome', 'unique'].map((f) => <button class={'chip' + (filter === f ? ' on' : '')} onClick={() => setFilter(f)}>{f === 'all' ? T.all[lang] : f === 'awesome' ? '★ ' + T.awesome[lang] : '◆ ' + T.unique[lang]}</button>)}</div>
       </header>
       {filter !== 'all' ? <div class="bestlist">{best.map((a) => <AppObj a={a} lang={lang} showRoom={names[a.room]} />)}</div> :
-        <div class="objects">{apps.map((a) => <AppObj a={a} lang={lang} />)}<div class="floor" /></div>}
+        <div class="objects">{apps.map((a) => <AppObj a={a} lang={lang} showRoom={R.id === 'foyer' ? names[a.room] : null} />)}<div class="floor" /></div>}
     </section>
   </main>;
 }
@@ -120,7 +121,7 @@ function AppObj({ a, lang, showRoom }) {
 function Preview({ data, lang, id }) {
   const a = data.apps.find((x) => x.id === id);
   const [inst, setInst] = useState(false);
-  if (!a) return <main class="pv"><a href="#/house/study">{T.back[lang]}</a></main>;
+  if (!a) return <main class="pv"><a href="#/house/foyer">{T.back[lang]}</a></main>;
   const steps = a.steps[lang];
   return <main class="pv">
     <a class="back" href={'#/house/' + a.room}>{T.back[lang]}</a>
