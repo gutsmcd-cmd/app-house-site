@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26",
+ "updated": "2026-10-28",
  "apps": [
   {
    "id": "onsei-nyuryoku",
@@ -1430,6 +1430,36 @@
    "icon": "📡"
   },
   {
+   "id": "redline",
+   "room": "attic",
+   "name": {
+    "en": "Redline",
+    "ja": "赤ペン"
+   },
+   "blurb": {
+    "en": "One photo, red proofreading marks, three suggested fixes.",
+    "ja": "写真1枚から、赤入れと直し案3つ。"
+   },
+   "url": "",
+   "awesome": false,
+   "unique": true,
+   "steps": {
+    "en": [
+     "Snap a page",
+     "See red marks",
+     "Pick a fix"
+    ],
+    "ja": [
+     "ページを撮る",
+     "赤い印が出る",
+     "直し案を選ぶ"
+    ]
+   },
+   "kind": "web",
+   "soon": true,
+   "icon": "🖊️"
+  },
+  {
    "id": "night-audit",
    "room": "attic",
    "name": {
@@ -1470,20 +1500,26 @@
     "en": "Short corgi films for your pocket.",
     "ja": "ポケットサイズのコーギー短編。"
    },
-   "url": "",
+   "url": "https://gutsmcd-cmd.github.io/koro-corgi/",
    "awesome": false,
    "unique": false,
    "steps": {
     "en": [
-     "Coming soon"
+     "Press ▶ and a little corgi film starts",
+     "Press ⏭ for the next one, or pick from the list",
+     "Turn on Sound for a gentle music box"
     ],
     "ja": [
-     "近日公開"
+     "▶を押すとコーギーの短い映画が始まる",
+     "⏭で次へ。リストから選んでもOK",
+     "「音」をオンにすると、やさしいオルゴール"
     ]
    },
    "kind": "web",
-   "soon": true,
-   "icon": "🐕"
+   "soon": false,
+   "icon": "🐕",
+   "added": "2026-10-28",
+   "shot": true
   }
  ],
  "rooms": [

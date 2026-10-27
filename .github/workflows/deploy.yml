@@ -25,6 +25,16 @@ jobs:
             git rm -r -q b64
             git add -A && git commit -m "Unpack uploaded site source" && git push origin HEAD:main
           fi
+      - name: Decode text-uploaded screenshots
+        run: |
+          set -e
+          if ls shots-b64/*.b64 >/dev/null 2>&1; then
+            for f in shots-b64/*.b64; do base64 -d "$f" > "public/shots/$(basename "$f" .b64)"; done
+            git config user.name "github-actions[bot]"
+            git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+            git rm -r -q shots-b64 && git add public/shots
+            git commit -m "Decode uploaded screenshots" && git push origin HEAD:main
+          fi
       - run: npm ci --no-audit --no-fund && npx vite build
       - name: Publish dist
         run: |
