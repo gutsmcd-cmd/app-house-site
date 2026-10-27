@@ -1192,7 +1192,8 @@
     ]
    },
    "kind": "extension",
-   "icon": "🧩"
+   "icon": "🧩",
+   "shot": true
   },
   {
    "id": "one-tap-ask",
@@ -1469,7 +1470,7 @@
     "en": "A dark listening game.",
     "ja": "暗い、聴く系のゲーム。"
    },
-   "url": "",
+   "url": "https://gutsmcd-cmd.github.io/dashboard/apps/night-audit/",
    "awesome": false,
    "unique": true,
    "steps": {
@@ -1485,8 +1486,8 @@
     ]
    },
    "kind": "web",
-   "soon": true,
-   "icon": "🎧"
+   "icon": "🎧",
+   "shot": true
   },
   {
    "id": "koro-corgi",

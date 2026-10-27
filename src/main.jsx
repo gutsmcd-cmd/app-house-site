@@ -127,7 +127,7 @@ function Preview({ data, lang, id }) {
     <a class="back" href={'#/house/' + a.room}>{T.back[lang]}</a>
     <div class="pvgrid">
       <div class="phone">
-        {a.soon || a.kind !== 'web' ? <div class="shotph"><span>{a.icon}</span></div> : <img src={BASE + 'shots/' + a.id + '.webp'} alt={a.name[lang]} loading="lazy" />}
+        {!a.shot && (a.soon || a.kind !== 'web') ? <div class="shotph"><span>{a.icon}</span></div> : <img src={BASE + 'shots/' + a.id + '.webp'} alt={a.name[lang]} loading="lazy" />}
         <ol class="overlay">{steps.map((s, i) => <li style={{ top: 14 + i * 28 + '%' }}><b>{i + 1}</b>{s}</li>)}</ol>
       </div>
       <div class="pvtext">
@@ -174,7 +174,7 @@ function Bar({ lang, setLang, prefs, setPref, route }) {
     await navigator.serviceWorker.ready;
     const d = await (await fetch(BASE + 'apps.json')).json();
     const assets = [...document.querySelectorAll('script[src],link[rel=stylesheet]')].map((e) => e.src || e.href);
-    const list = [BASE, BASE + 'index.html', BASE + 'apps.json', BASE + 'icon.svg', BASE + 'manifest.webmanifest', ...assets, ...['western', 'japanese'].flatMap((k) => [BASE + 'art/' + k + '-line.webp', BASE + 'art/' + k + '-color.webp']), ...d.apps.filter((a) => a.kind === 'web' && !a.soon).map((a) => BASE + 'shots/' + a.id + '.webp')];
+    const list = [BASE, BASE + 'index.html', BASE + 'apps.json', BASE + 'icon.svg', BASE + 'manifest.webmanifest', ...assets, ...['western', 'japanese'].flatMap((k) => [BASE + 'art/' + k + '-line.webp', BASE + 'art/' + k + '-color.webp']), ...d.apps.filter((a) => a.shot || (a.kind === 'web' && !a.soon)).map((a) => BASE + 'shots/' + a.id + '.webp')];
     (reg.active || navigator.serviceWorker.controller).postMessage({ cache: list });
     setOff(true); save('offline', '1');
   };
