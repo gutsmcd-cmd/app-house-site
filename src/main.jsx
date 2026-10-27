@@ -143,7 +143,9 @@ function Preview({ data, lang, id }) {
           {a.kind === 'web' && <button class="btn green" onClick={() => setInst(!inst)}>⬇ {T.install[lang]}</button>}
           {a.kind === 'android' && <a class="btn green" href={a.url} target="_blank" rel="noopener">🤖 {T.apk[lang]}</a>}
           {a.kind === 'extension' && <a class="btn green" href={a.url} target="_blank" rel="noopener">🧩 {T.ext[lang]}</a>}
+          {a.apk && <a class="btn green" href={a.apk} download>🤖 {lang === 'ja' ? 'アプリを入れる' : 'Install app'}</a>}
         </div>}
+        {a.apk && !a.soon && <p class="note">{lang === 'ja' ? 'Android用。最初の1回だけ：「不明なアプリのインストール」の画面が出たら、「この提供元のアプリを許可」をオンにして戻ります。' : 'For Android. First time only: if asked about installing unknown apps, turn on “Allow from this source”, then go back.'}</p>}
         {inst && <InstallHelp lang={lang} url={a.url} />}
       </div>
     </div>
