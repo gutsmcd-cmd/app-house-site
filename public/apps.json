@@ -1430,36 +1430,6 @@
    "icon": "📡"
   },
   {
-   "id": "redline",
-   "room": "attic",
-   "name": {
-    "en": "Redline",
-    "ja": "赤ペン"
-   },
-   "blurb": {
-    "en": "One photo, red proofreading marks, three suggested fixes.",
-    "ja": "写真1枚から、赤入れと直し案3つ。"
-   },
-   "url": "",
-   "awesome": false,
-   "unique": true,
-   "steps": {
-    "en": [
-     "Snap a page",
-     "See red marks",
-     "Pick a fix"
-    ],
-    "ja": [
-     "ページを撮る",
-     "赤い印が出る",
-     "直し案を選ぶ"
-    ]
-   },
-   "kind": "web",
-   "soon": true,
-   "icon": "🖊️"
-  },
-  {
    "id": "night-audit",
    "room": "attic",
    "name": {
