@@ -1582,6 +1582,65 @@
       "added": "2026-10-28",
       "icon": "🎬",
       "shot": true
+    },
+    {
+      "id": "studio",
+      "room": "lounge",
+      "name": {
+        "en": "Studio",
+        "ja": "スタジオ"
+      },
+      "blurb": {
+        "en": "My ten-room picture portfolio. Open a room, swipe through, keep favourites, ask about a piece.",
+        "ja": "10の部屋の絵のポートフォリオ。部屋を開いてスワイプ、お気に入りを残して、作品について問い合わせ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/studio/",
+      "awesome": true,
+      "steps": {
+        "en": [
+          "Tap a room to open it",
+          "Tap a picture, then swipe; tap ♡ Keep to save favourites",
+          "Tap Ask about this to send an email about that piece"
+        ],
+        "ja": [
+          "部屋をタップして開く",
+          "絵をタップしてスワイプ。♡で保存",
+          "「この作品について聞く」でメールを送る"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-28",
+      "icon": "🖼️",
+      "shot": true
+    },
+    {
+      "id": "family-files",
+      "room": "study",
+      "name": {
+        "en": "Family Files",
+        "ja": "家族のファイル"
+      },
+      "blurb": {
+        "en": "The Lawson 100 film for Masa, the Koro and Mugi booklet for Rie, and the photos, all in one place.",
+        "ja": "マサへのローソン100の動画、りえちゃんへのコロとムギの冊子、写真をひとまとめに。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/family-files/",
+      "steps": {
+        "en": [
+          "Press play to watch the film, or Save the film",
+          "Read the booklet on the page or save the PDF",
+          "Tap a photo to see it big, or save all photos as a zip"
+        ],
+        "ja": [
+          "再生で動画を見る、または保存",
+          "冊子をその場で読む、またはPDFを保存",
+          "写真をタップで大きく、zipでまとめて保存"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-28",
+      "icon": "📁",
+      "shot": true
     }
   ],
   "rooms": [
