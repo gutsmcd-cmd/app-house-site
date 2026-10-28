@@ -1,0 +1,1714 @@
+{
+  "updated": "2026-10-28",
+  "apps": [
+    {
+      "id": "onsei-nyuryoku",
+      "room": "study",
+      "name": {
+        "en": "Voice Typing",
+        "ja": "音声入力"
+      },
+      "blurb": {
+        "en": "Speak and it becomes text, even with no signal.",
+        "ja": "話すと文字になる。電波がなくても。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/onsei-nyuryoku/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Tap the mic and allow it once",
+          "Talk normally; text appears as you speak",
+          "Copy the text into LINE, mail or notes"
+        ],
+        "ja": [
+          "マイクを押して、一度だけ許可",
+          "ふつうに話すと文字が出る",
+          "LINEやメールにコピー"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-25",
+      "icon": "🎙️"
+    },
+    {
+      "id": "three-things",
+      "room": "study",
+      "name": {
+        "en": "Three Things",
+        "ja": "今日の3つ"
+      },
+      "blurb": {
+        "en": "At most three must-do tasks for today.",
+        "ja": "今日やることを、最大3つ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/three-things/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Type up to three tasks",
+          "Tick them off as you go",
+          "Tomorrow starts fresh"
+        ],
+        "ja": [
+          "やることを3つまで書く",
+          "終わったらチェック",
+          "明日はまっさらから"
+        ]
+      },
+      "kind": "web",
+      "icon": "3️⃣"
+    },
+    {
+      "id": "satto-memo",
+      "room": "study",
+      "name": {
+        "en": "Quick Memo",
+        "ja": "さっとメモ"
+      },
+      "blurb": {
+        "en": "A quick note that stays on the device.",
+        "ja": "端末に残る、すばやいメモ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/satto-memo/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open and type right away",
+          "It saves by itself",
+          "Nothing leaves your phone"
+        ],
+        "ja": [
+          "開いてすぐ書く",
+          "自動で保存",
+          "外には出ない"
+        ]
+      },
+      "kind": "web",
+      "icon": "📝"
+    },
+    {
+      "id": "teikei-bun",
+      "room": "study",
+      "name": {
+        "en": "My Common Phrases",
+        "ja": "定型文"
+      },
+      "blurb": {
+        "en": "Reusable phrases, ready to copy.",
+        "ja": "よく使う文を、すぐコピー。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/teikei-bun/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Save the lines you type often",
+          "Tap one to copy it",
+          "Paste anywhere"
+        ],
+        "ja": [
+          "よく打つ文を保存",
+          "タップでコピー",
+          "どこにでも貼る"
+        ]
+      },
+      "kind": "web",
+      "icon": "💬"
+    },
+    {
+      "id": "poco-a-poco",
+      "room": "study",
+      "name": {
+        "en": "Poco a Poco",
+        "ja": "ポコ・ア・ポコ"
+      },
+      "blurb": {
+        "en": "Offline Spanish for Japanese speakers.",
+        "ja": "日本語話者向けの、オフラインスペイン語。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/poco-a-poco/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Pick a lesson",
+          "Listen and repeat",
+          "Works on the train with no signal"
+        ],
+        "ja": [
+          "レッスンを選ぶ",
+          "聞いてまねる",
+          "電車の中でも使える"
+        ]
+      },
+      "kind": "web",
+      "icon": "🇪🇸"
+    },
+    {
+      "id": "tabi-no-phrase",
+      "room": "study",
+      "name": {
+        "en": "Travel Phrases",
+        "ja": "旅のフレーズ"
+      },
+      "blurb": {
+        "en": "Travel lines you can show to someone.",
+        "ja": "現地の人に見せる旅行フレーズ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/tabi-no-phrase/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick a situation",
+          "Show the big phrase to the person",
+          "Tap to hear it"
+        ],
+        "ja": [
+          "場面を選ぶ",
+          "大きな文字を相手に見せる",
+          "タップで音声"
+        ]
+      },
+      "kind": "web",
+      "icon": "🗣️"
+    },
+    {
+      "id": "osaka-takken",
+      "room": "study",
+      "name": {
+        "en": "Osaka Real Estate Study",
+        "ja": "大阪宅建"
+      },
+      "blurb": {
+        "en": "A companion for learning real-estate work in Osaka.",
+        "ja": "大阪の不動産仕事を学ぶための伴走。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/osaka-takken/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Pick a topic",
+          "Read the short card",
+          "Quiz yourself"
+        ],
+        "ja": [
+          "テーマを選ぶ",
+          "短いカードを読む",
+          "自分でクイズ"
+        ]
+      },
+      "kind": "web",
+      "icon": "🏢"
+    },
+    {
+      "id": "moji-kazoeru",
+      "room": "study",
+      "name": {
+        "en": "Character Count",
+        "ja": "文字数カウント"
+      },
+      "blurb": {
+        "en": "Count characters without an account.",
+        "ja": "アカウントなしで文字数をはかる。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/moji-kazoeru/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Paste or type text",
+          "See the count live",
+          "Copy it back"
+        ],
+        "ja": [
+          "文を貼るか打つ",
+          "文字数がすぐ出る",
+          "そのままコピー"
+        ]
+      },
+      "kind": "web",
+      "icon": "🔢"
+    },
+    {
+      "id": "zairyu-reminder",
+      "room": "study",
+      "name": {
+        "en": "Residence Reminder",
+        "ja": "在留リマインダー"
+      },
+      "blurb": {
+        "en": "A reminder for residence-card dates.",
+        "ja": "在留カードの期限を忘れないために。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/zairyu-reminder/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Enter your card's expiry date",
+          "See how long is left",
+          "Get the renewal window"
+        ],
+        "ja": [
+          "カードの期限を入れる",
+          "残り日数を見る",
+          "更新できる時期がわかる"
+        ]
+      },
+      "kind": "web",
+      "icon": "🪪"
+    },
+    {
+      "id": "ato-nannichi",
+      "room": "study",
+      "name": {
+        "en": "Days Left",
+        "ja": "あと何日"
+      },
+      "blurb": {
+        "en": "How many days until a date.",
+        "ja": "その日まで、あと何日。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/ato-nannichi/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick a date",
+          "See the days left",
+          "Add more dates"
+        ],
+        "ja": [
+          "日付を選ぶ",
+          "あと何日か見る",
+          "いくつでも追加"
+        ]
+      },
+      "kind": "web",
+      "icon": "📅"
+    },
+    {
+      "id": "giji-memo",
+      "room": "study",
+      "name": {
+        "en": "Meeting Notes",
+        "ja": "議事メモ"
+      },
+      "blurb": {
+        "en": "Fast notes for a meeting, with decisions and to-dos.",
+        "ja": "会議のメモ、決定とやることを素早く。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/giji-memo/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Start a meeting",
+          "Type notes, mark decisions",
+          "Copy the summary"
+        ],
+        "ja": [
+          "会議を始める",
+          "メモを打って決定に印",
+          "まとめをコピー"
+        ]
+      },
+      "kind": "web",
+      "icon": "📋"
+    },
+    {
+      "id": "kanban-kami",
+      "room": "study",
+      "name": {
+        "en": "To-Do Board",
+        "ja": "かんばんボード"
+      },
+      "blurb": {
+        "en": "A simple drag-and-drop task board.",
+        "ja": "ドラッグで動かす、シンプルなタスクボード。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/kanban-kami/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Add a card",
+          "Drag it across the columns",
+          "Done goes to the right"
+        ],
+        "ja": [
+          "カードを追加",
+          "列の間をドラッグ",
+          "終わったら右へ"
+        ]
+      },
+      "kind": "web",
+      "icon": "🗂️"
+    },
+    {
+      "id": "wakariyasuku",
+      "room": "study",
+      "name": {
+        "en": "Make It Clear",
+        "ja": "わかりやすく"
+      },
+      "blurb": {
+        "en": "Turns hard text into plain, easy words.",
+        "ja": "むずかしい文を、わかりやすく。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/wakariyasuku/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Paste a hard sentence",
+          "Tap to simplify",
+          "Read the plain version"
+        ],
+        "ja": [
+          "むずかしい文を貼る",
+          "ボタンで言いかえ",
+          "やさしい文を読む"
+        ]
+      },
+      "kind": "web",
+      "icon": "💡"
+    },
+    {
+      "id": "spell-camera",
+      "room": "study",
+      "name": {
+        "en": "Spell Check Camera",
+        "ja": "スペルチェックカメラ"
+      },
+      "blurb": {
+        "en": "Point the camera at English writing and see the mistakes marked.",
+        "ja": "英語の文にカメラを向けると、まちがいに印。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/spell-camera/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Point the camera at handwriting or print",
+          "Hold still for a second",
+          "See errors marked with fixes"
+        ],
+        "ja": [
+          "英語の文にカメラを向ける",
+          "少し止める",
+          "まちがいと直しが出る"
+        ]
+      },
+      "kind": "web",
+      "icon": "🔍"
+    },
+    {
+      "id": "long-shot",
+      "room": "workshop",
+      "name": {
+        "en": "Long Shot",
+        "ja": "スクショつなぎ"
+      },
+      "blurb": {
+        "en": "Stitch screenshots you already took into one tall image.",
+        "ja": "撮ってある画面を、縦長の1枚につなぐ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/long-shot/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Pick your screenshots",
+          "It finds the overlap",
+          "Save one tall image"
+        ],
+        "ja": [
+          "スクショを選ぶ",
+          "重なりを自動で見つける",
+          "縦長の1枚を保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "📜"
+    },
+    {
+      "id": "gazou-shiboru",
+      "room": "workshop",
+      "name": {
+        "en": "Shrink Image",
+        "ja": "画像を軽く"
+      },
+      "blurb": {
+        "en": "Make an image smaller before you send it.",
+        "ja": "送る前に、画像を小さく。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/gazou-shiboru/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick a photo",
+          "Choose a size",
+          "Save the smaller copy"
+        ],
+        "ja": [
+          "写真を選ぶ",
+          "サイズを選ぶ",
+          "小さい版を保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "🗜️"
+    },
+    {
+      "id": "douga-shiboru",
+      "room": "workshop",
+      "name": {
+        "en": "Video Shrinker",
+        "ja": "動画しぼる"
+      },
+      "blurb": {
+        "en": "Shrink a video so it's easy to send by LINE or email.",
+        "ja": "動画を小さくして、LINEやメールで送りやすく。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/douga-shiboru/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick a video",
+          "Choose a size",
+          "Save and send"
+        ],
+        "ja": [
+          "動画を選ぶ",
+          "サイズを選ぶ",
+          "保存して送る"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-25",
+      "icon": "🎞️"
+    },
+    {
+      "id": "kukkiri",
+      "room": "workshop",
+      "name": {
+        "en": "Photo Sharpener",
+        "ja": "くっきり写真"
+      },
+      "blurb": {
+        "en": "Enlarge small or blurry photos 2x or 4x, sharper.",
+        "ja": "小さい写真やぼけた写真を2倍・4倍でくっきり。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/kukkiri/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick a small photo",
+          "Choose 2x or 4x",
+          "Save the sharper one"
+        ],
+        "ja": [
+          "小さい写真を選ぶ",
+          "2倍か4倍",
+          "くっきり版を保存"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-25",
+      "icon": "✨"
+    },
+    {
+      "id": "moms-photo-studio",
+      "room": "workshop",
+      "name": {
+        "en": "Mom's Photo Studio",
+        "ja": "ママのフォトスタジオ"
+      },
+      "blurb": {
+        "en": "A simple, free photo editor for the phone.",
+        "ja": "スマホ用のかんたん写真編集。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/moms-photo-studio/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open a photo",
+          "Crop, brighten, add filters",
+          "Save it"
+        ],
+        "ja": [
+          "写真を開く",
+          "切り取り・明るさ・フィルター",
+          "保存"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-25",
+      "icon": "🖼️"
+    },
+    {
+      "id": "collage-chou",
+      "room": "workshop",
+      "name": {
+        "en": "Photo Collage",
+        "ja": "コラージュ帳"
+      },
+      "blurb": {
+        "en": "Two to six photos, one collage.",
+        "ja": "写真2〜6枚を、1枚のコラージュに。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/collage-chou/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick 2 to 6 photos",
+          "Choose a layout",
+          "Save the collage"
+        ],
+        "ja": [
+          "写真を2〜6枚選ぶ",
+          "レイアウトを選ぶ",
+          "保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "🧩"
+    },
+    {
+      "id": "pdf-ippatsu",
+      "room": "workshop",
+      "name": {
+        "en": "PDF Joiner",
+        "ja": "PDF一発"
+      },
+      "blurb": {
+        "en": "Photos into one PDF, or PDFs joined in your order.",
+        "ja": "写真もPDFも、1つのPDFにまとめる。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/pdf-ippatsu/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Add photos or PDFs",
+          "Drag them into order",
+          "Save one PDF"
+        ],
+        "ja": [
+          "写真やPDFを追加",
+          "順番を並べる",
+          "1つのPDFを保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "📄"
+    },
+    {
+      "id": "in-wo-osu",
+      "room": "workshop",
+      "name": {
+        "en": "Stamp & Sign",
+        "ja": "はんこ押し"
+      },
+      "blurb": {
+        "en": "Put a seal or signature on a PDF or photo.",
+        "ja": "PDFや写真に、はんこやサインを押す。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/in-wo-osu/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Open a PDF or photo",
+          "Draw a signature or make a hanko",
+          "Place it and save"
+        ],
+        "ja": [
+          "PDFか写真を開く",
+          "サインやはんこを作る",
+          "置いて保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "🔴"
+    },
+    {
+      "id": "loupe",
+      "room": "workshop",
+      "name": {
+        "en": "Magnifier",
+        "ja": "ルーペ"
+      },
+      "blurb": {
+        "en": "A camera magnifier for small print.",
+        "ja": "小さい文字のための、カメラのルーペ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/loupe/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Allow the camera",
+          "Pinch to zoom",
+          "Tap to freeze the picture"
+        ],
+        "ja": [
+          "カメラを許可",
+          "ピンチで拡大",
+          "タップで止める"
+        ]
+      },
+      "kind": "web",
+      "icon": "🔎"
+    },
+    {
+      "id": "qr-ippatsu",
+      "room": "workshop",
+      "name": {
+        "en": "QR Make & Scan",
+        "ja": "QR一発"
+      },
+      "blurb": {
+        "en": "Make or scan a QR code, on the device.",
+        "ja": "QRコードを、その場で作る・読む。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/qr-ippatsu/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Type a link or text",
+          "Get the QR code",
+          "Or scan one with the camera"
+        ],
+        "ja": [
+          "リンクや文を入れる",
+          "QRができる",
+          "カメラで読むことも"
+        ]
+      },
+      "kind": "web",
+      "icon": "🔳"
+    },
+    {
+      "id": "mosaic-ippatsu",
+      "room": "workshop",
+      "name": {
+        "en": "Blur Out",
+        "ja": "モザイク一発"
+      },
+      "blurb": {
+        "en": "Blur part of a photo before it leaves the phone.",
+        "ja": "出す前に、写真の一部をぼかす。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/mosaic-ippatsu/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open a photo",
+          "Rub over faces or numbers",
+          "Save the blurred copy"
+        ],
+        "ja": [
+          "写真を開く",
+          "顔や番号をなぞる",
+          "ぼかした版を保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "🌫️"
+    },
+    {
+      "id": "yajirushi-ippatsu",
+      "room": "workshop",
+      "name": {
+        "en": "Screenshot Arrows",
+        "ja": "矢印一発"
+      },
+      "blurb": {
+        "en": "Drop an arrow on a picture.",
+        "ja": "写真に、矢印をひとつ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/yajirushi-ippatsu/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open a screenshot",
+          "Drag to draw an arrow",
+          "Save and share"
+        ],
+        "ja": [
+          "スクショを開く",
+          "ドラッグで矢印",
+          "保存して送る"
+        ]
+      },
+      "kind": "web",
+      "icon": "➡️"
+    },
+    {
+      "id": "moji-nose",
+      "room": "workshop",
+      "name": {
+        "en": "Text on Photo",
+        "ja": "文字入れ"
+      },
+      "blurb": {
+        "en": "Put words on a photo.",
+        "ja": "写真に文字をのせる。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/moji-nose/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open a photo",
+          "Type your words",
+          "Move, size and save"
+        ],
+        "ja": [
+          "写真を開く",
+          "文字を打つ",
+          "動かして保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "🔤"
+    },
+    {
+      "id": "keshigomu",
+      "room": "workshop",
+      "name": {
+        "en": "Eraser",
+        "ja": "けしゴム"
+      },
+      "blurb": {
+        "en": "Rub out things you don't want in a photo.",
+        "ja": "写真の中の、いらないものを消す。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/keshigomu/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open a photo",
+          "Paint over the thing",
+          "It disappears; save"
+        ],
+        "ja": [
+          "写真を開く",
+          "消したい所を塗る",
+          "消えたら保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "🩹"
+    },
+    {
+      "id": "kirinuki",
+      "room": "workshop",
+      "name": {
+        "en": "Cutout",
+        "ja": "きりぬき"
+      },
+      "blurb": {
+        "en": "Cut a person or thing out of the background.",
+        "ja": "人や物を、背景から切り抜く。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/kirinuki/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Open a photo",
+          "It removes the background",
+          "Save a transparent PNG"
+        ],
+        "ja": [
+          "写真を開く",
+          "背景が消える",
+          "透明PNGで保存"
+        ]
+      },
+      "kind": "web",
+      "icon": "✂️"
+    },
+    {
+      "id": "iroawase",
+      "room": "workshop",
+      "name": {
+        "en": "Color Mix",
+        "ja": "いろあわせ"
+      },
+      "blurb": {
+        "en": "Find and match colours.",
+        "ja": "色を見つけて、あわせる。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/iroawase/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick or snap a colour",
+          "See matching colours",
+          "Copy the codes"
+        ],
+        "ja": [
+          "色を選ぶか撮る",
+          "合う色が出る",
+          "コードをコピー"
+        ]
+      },
+      "kind": "web",
+      "icon": "🎨"
+    },
+    {
+      "id": "black-screen",
+      "room": "workshop",
+      "name": {
+        "en": "Black Screen",
+        "ja": "ブラック画面"
+      },
+      "blurb": {
+        "en": "Black out the screen while video keeps playing. Android app.",
+        "ja": "動画はそのまま、画面だけ黒く。Androidアプリ。"
+      },
+      "url": "https://github.com/gutsmcd-cmd/black-screen/releases",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Download the APK on Android",
+          "Start your video, then tap Black",
+          "Tap twice to come back"
+        ],
+        "ja": [
+          "AndroidでAPKをダウンロード",
+          "動画を流してブラックを押す",
+          "2回タップで戻る"
+        ]
+      },
+      "kind": "android",
+      "icon": "⬛"
+    },
+    {
+      "id": "warikan",
+      "room": "kitchen",
+      "name": {
+        "en": "Split Bill",
+        "ja": "わりかん"
+      },
+      "blurb": {
+        "en": "Split a bill without an account.",
+        "ja": "アカウントなしで、割り勘。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/warikan/",
+      "awesome": true,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Enter the total",
+          "Add people",
+          "See who pays what"
+        ],
+        "ja": [
+          "合計を入れる",
+          "人数を入れる",
+          "一人いくらか出る"
+        ]
+      },
+      "kind": "web",
+      "icon": "💴"
+    },
+    {
+      "id": "gomi-touban",
+      "room": "kitchen",
+      "name": {
+        "en": "Trash Duty",
+        "ja": "ごみの日"
+      },
+      "blurb": {
+        "en": "Whose turn it is to take the trash out.",
+        "ja": "ごみ出しは、誰の番か。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/gomi-touban/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Add the people",
+          "Set the days",
+          "See whose turn it is"
+        ],
+        "ja": [
+          "メンバーを入れる",
+          "曜日を決める",
+          "今日の当番がわかる"
+        ]
+      },
+      "kind": "web",
+      "icon": "🗑️"
+    },
+    {
+      "id": "tabi-no-mochimono",
+      "room": "kitchen",
+      "name": {
+        "en": "Trip Packing",
+        "ja": "旅の持ち物"
+      },
+      "blurb": {
+        "en": "A packing list that works with the signal off.",
+        "ja": "電波がなくても使える、持ち物リスト。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/tabi-no-mochimono/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Pick a trip type",
+          "Tick items as you pack",
+          "Reuse it next time"
+        ],
+        "ja": [
+          "旅の種類を選ぶ",
+          "詰めたらチェック",
+          "次回も使える"
+        ]
+      },
+      "kind": "web",
+      "icon": "🧳"
+    },
+    {
+      "id": "kaimono-memo",
+      "room": "kitchen",
+      "name": {
+        "en": "Shopping List",
+        "ja": "買い物メモ"
+      },
+      "blurb": {
+        "en": "A shopping list, nothing else.",
+        "ja": "買い物メモだけ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/kaimono-memo/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Add items",
+          "Tick them in the shop",
+          "Clear when done"
+        ],
+        "ja": [
+          "品物を追加",
+          "店でチェック",
+          "終わったら消す"
+        ]
+      },
+      "kind": "web",
+      "icon": "🛒"
+    },
+    {
+      "id": "kitchen-timer",
+      "room": "kitchen",
+      "name": {
+        "en": "Kitchen Timer",
+        "ja": "キッチンタイマー"
+      },
+      "blurb": {
+        "en": "Several timers at once for cooking.",
+        "ja": "料理用の、いくつも同時タイマー。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/kitchen-timer/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Set a time",
+          "Start more timers",
+          "It rings when done"
+        ],
+        "ja": [
+          "時間を決める",
+          "いくつも動かせる",
+          "終わると鳴る"
+        ]
+      },
+      "kind": "web",
+      "icon": "⏲️"
+    },
+    {
+      "id": "hakaru-dake",
+      "room": "kitchen",
+      "name": {
+        "en": "Just Time",
+        "ja": "はかるだけ"
+      },
+      "blurb": {
+        "en": "A stopwatch, nothing else.",
+        "ja": "ストップウォッチだけ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/hakaru-dake/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Tap start",
+          "Tap stop",
+          "Lap if you like"
+        ],
+        "ja": [
+          "スタート",
+          "ストップ",
+          "ラップも"
+        ]
+      },
+      "kind": "web",
+      "icon": "⏱️"
+    },
+    {
+      "id": "count-ippatsu",
+      "room": "kitchen",
+      "name": {
+        "en": "Count Once",
+        "ja": "カウンター"
+      },
+      "blurb": {
+        "en": "A big tap counter.",
+        "ja": "大きなタップカウンター。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/count-ippatsu/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Tap the big button",
+          "Watch the number",
+          "Reset any time"
+        ],
+        "ja": [
+          "大きなボタンをタップ",
+          "数が増える",
+          "いつでもリセット"
+        ]
+      },
+      "kind": "web",
+      "icon": "👆"
+    },
+    {
+      "id": "u74-picture-todo",
+      "room": "kitchen",
+      "name": {
+        "en": "Picture To-Do",
+        "ja": "絵でやること"
+      },
+      "blurb": {
+        "en": "A to-do list made of pictures, great for kids.",
+        "ja": "絵でつくるやることリスト。子どもにも。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/u74-picture-todo/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Pick a picture for each job",
+          "Put them in order",
+          "Tap when done"
+        ],
+        "ja": [
+          "やることに絵を選ぶ",
+          "順番に並べる",
+          "できたらタップ"
+        ]
+      },
+      "kind": "web",
+      "icon": "🖍️"
+    },
+    {
+      "id": "ask-all",
+      "room": "lounge",
+      "name": {
+        "en": "Ask All",
+        "ja": "Ask All"
+      },
+      "blurb": {
+        "en": "Ask several free AIs at once and line the answers up.",
+        "ja": "いくつかの無料AIに同時に聞いて、答えを並べる。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/ask-all/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Type one question",
+          "It goes to several AIs",
+          "Compare the answers side by side"
+        ],
+        "ja": [
+          "質問をひとつ打つ",
+          "いくつものAIに届く",
+          "答えを並べて比べる"
+        ]
+      },
+      "kind": "web",
+      "icon": "🤖"
+    },
+    {
+      "id": "ask-all-extension",
+      "room": "lounge",
+      "name": {
+        "en": "Ask All (PC)",
+        "ja": "Ask All（PC）"
+      },
+      "blurb": {
+        "en": "A Chrome extension that asks the AIs open in your tabs.",
+        "ja": "開いているタブのAIに、まとめて聞くChrome拡張。"
+      },
+      "url": "https://github.com/gutsmcd-cmd/ask-all-extension",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Download and load it in Chrome",
+          "Open your AI tabs",
+          "Ask once, all answer"
+        ],
+        "ja": [
+          "ダウンロードしてChromeに入れる",
+          "AIのタブを開く",
+          "一度聞けば全部答える"
+        ]
+      },
+      "kind": "extension",
+      "icon": "🧩",
+      "shot": true
+    },
+    {
+      "id": "one-tap-ask",
+      "room": "lounge",
+      "name": {
+        "en": "One-Tap Ask",
+        "ja": "ひと押し質問"
+      },
+      "blurb": {
+        "en": "Save a question, ask it with one tap.",
+        "ja": "質問を保存して、ワンタップで聞く。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/one-tap-ask/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Save your favourite questions",
+          "Tap one",
+          "It opens the answer"
+        ],
+        "ja": [
+          "よく聞く質問を保存",
+          "タップ",
+          "答えが開く"
+        ]
+      },
+      "kind": "web",
+      "icon": "☝️"
+    },
+    {
+      "id": "camera-honyaku",
+      "room": "lounge",
+      "name": {
+        "en": "Camera Translator",
+        "ja": "カメラ翻訳"
+      },
+      "blurb": {
+        "en": "Snap Japanese signs and papers and read them in English.",
+        "ja": "日本語の看板や書類を撮って、英語で読む。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/camera-honyaku/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Point the camera at Japanese text",
+          "Snap",
+          "Read it in English"
+        ],
+        "ja": [
+          "日本語にカメラを向ける",
+          "撮る",
+          "英語で読む"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-25",
+      "icon": "📷"
+    },
+    {
+      "id": "deka-moji",
+      "room": "lounge",
+      "name": {
+        "en": "Lyrics Enlarger",
+        "ja": "でか文字"
+      },
+      "blurb": {
+        "en": "Show lyrics or words huge across the screen.",
+        "ja": "歌詞や言葉を、画面いっぱいに大きく。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/deka-moji/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Paste the words",
+          "It fills the screen",
+          "Scroll along"
+        ],
+        "ja": [
+          "言葉を貼る",
+          "画面いっぱいに",
+          "スクロール"
+        ]
+      },
+      "kind": "web",
+      "icon": "🎤"
+    },
+    {
+      "id": "yomiage-ita",
+      "room": "lounge",
+      "name": {
+        "en": "Simple Teleprompter",
+        "ja": "カンペ"
+      },
+      "blurb": {
+        "en": "A scrolling script for talks and videos.",
+        "ja": "話す・撮るための、流れる原稿。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/yomiage-ita/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Paste your script",
+          "Set the speed",
+          "Read as it scrolls"
+        ],
+        "ja": [
+          "原稿を貼る",
+          "速さを決める",
+          "流れる文を読む"
+        ]
+      },
+      "kind": "web",
+      "icon": "📺"
+    },
+    {
+      "id": "iki-wo-suu",
+      "room": "lounge",
+      "name": {
+        "en": "Breathe",
+        "ja": "いきをすう"
+      },
+      "blurb": {
+        "en": "A calm breathing guide.",
+        "ja": "落ち着く呼吸ガイド。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/iki-wo-suu/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Press start",
+          "Breathe with the circle",
+          "Stop when calm"
+        ],
+        "ja": [
+          "スタート",
+          "円に合わせて呼吸",
+          "落ち着いたら終わり"
+        ]
+      },
+      "kind": "web",
+      "icon": "🌬️"
+    },
+    {
+      "id": "me-no-taisou",
+      "room": "lounge",
+      "name": {
+        "en": "Eye Rest",
+        "ja": "目の体操"
+      },
+      "blurb": {
+        "en": "A short eye exercise for screen breaks.",
+        "ja": "画面休憩の、短い目の体操。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/dashboard/apps/me-no-taisou/index.html",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Press start",
+          "Follow the dot with your eyes",
+          "Done in a minute"
+        ],
+        "ja": [
+          "スタート",
+          "点を目で追う",
+          "1分で終わり"
+        ]
+      },
+      "kind": "web",
+      "icon": "👀"
+    },
+    {
+      "id": "u74-garden",
+      "room": "game",
+      "name": {
+        "en": "Sakura Matcha Garden",
+        "ja": "桜抹茶ガーデン"
+      },
+      "blurb": {
+        "en": "A calm little garden to grow.",
+        "ja": "育てる、小さなおだやかな庭。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/u74-garden/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Plant a seed",
+          "Water and wait",
+          "Watch it bloom"
+        ],
+        "ja": [
+          "種をまく",
+          "水をやって待つ",
+          "咲くのを見る"
+        ]
+      },
+      "kind": "web",
+      "icon": "🌸"
+    },
+    {
+      "id": "offline-browser",
+      "room": "attic",
+      "name": {
+        "en": "Offline Browser",
+        "ja": "オフラインブラウザ"
+      },
+      "blurb": {
+        "en": "Android app: save web pages and read them with no signal.",
+        "ja": "Androidアプリ。ページを保存して電波なしで読む。"
+      },
+      "url": "",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Save a page while online",
+          "Open it later offline",
+          "Coming soon"
+        ],
+        "ja": [
+          "電波がある時に保存",
+          "あとでオフラインで開く",
+          "近日公開"
+        ]
+      },
+      "kind": "android",
+      "soon": true,
+      "icon": "📡"
+    },
+    {
+      "id": "redline",
+      "room": "attic",
+      "name": {
+        "en": "Redline",
+        "ja": "赤ペン"
+      },
+      "blurb": {
+        "en": "One photo, red proofreading marks, three suggested fixes.",
+        "ja": "写真1枚から、赤入れと直し案3つ。"
+      },
+      "url": "",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Snap a page",
+          "See red marks",
+          "Pick a fix"
+        ],
+        "ja": [
+          "ページを撮る",
+          "赤い印が出る",
+          "直し案を選ぶ"
+        ]
+      },
+      "kind": "web",
+      "soon": true,
+      "icon": "🖊️"
+    },
+    {
+      "id": "night-audit",
+      "room": "attic",
+      "name": {
+        "en": "Night Audit",
+        "ja": "ナイト・オーディット"
+      },
+      "blurb": {
+        "en": "A dark listening game.",
+        "ja": "暗い、聴く系のゲーム。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/dashboard/apps/night-audit/",
+      "awesome": false,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Lights off",
+          "Headphones on",
+          "Listen"
+        ],
+        "ja": [
+          "電気を消す",
+          "ヘッドホン",
+          "聴く"
+        ]
+      },
+      "kind": "web",
+      "icon": "🎧",
+      "shot": true
+    },
+    {
+      "id": "koro-corgi",
+      "room": "attic",
+      "name": {
+        "en": "Koro Corgi",
+        "ja": "コロ・コーギー"
+      },
+      "blurb": {
+        "en": "Short corgi films for your pocket.",
+        "ja": "ポケットサイズのコーギー短編。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/koro-corgi/",
+      "awesome": false,
+      "unique": false,
+      "steps": {
+        "en": [
+          "Press ▶ and a little corgi film starts",
+          "Press ⏭ for the next one, or pick from the list",
+          "Turn on Sound for a gentle music box"
+        ],
+        "ja": [
+          "▶を押すとコーギーの短い映画が始まる",
+          "⏭で次へ。リストから選んでもOK",
+          "「音」をオンにすると、やさしいオルゴール"
+        ]
+      },
+      "kind": "web",
+      "soon": false,
+      "icon": "🐕",
+      "added": "2026-10-28",
+      "shot": true,
+      "apk": "https://gutsmcd-cmd.github.io/free-apps/apk/koro-corgi.apk"
+    },
+    {
+      "id": "pet-house",
+      "room": "game",
+      "name": {
+        "en": "Pet House",
+        "ja": "ペットハウス"
+      },
+      "blurb": {
+        "en": "Rie's corgi Mugi and axolotl Mizu. Send Mugi far away, call her back, throw her ball, teach her tricks.",
+        "ja": "りえちゃんのコーギーのムギとウーパールーパーのミズ。遠くへ行かせて呼び戻したり、ボールを投げたり、技を教えたり。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/pet-house/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Play: drag Mugi up to send her far, then say \"come here\" or tap Come here",
+          "Flick the ball to throw it; say sit, paw, spin, roll over, play dead or hum APT. to unlock tricks",
+          "Try corgi vision, take a photo with Mugi, and watch her home videos in Films"
+        ],
+        "ja": [
+          "あそぶ：ムギを上にドラッグして遠くへ、「おいで」で戻ってくる",
+          "ボールをはじいて投げる。おすわり・お手・くるくる・ごろん・バーン、APT.のハミングで技が増える",
+          "コーギーの目、ムギと写真、ビデオでホームビデオも"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-28",
+      "icon": "🐕"
+    },
+    {
+      "id": "koro-films",
+      "room": "game",
+      "name": {
+        "en": "Koro Films for Rie",
+        "ja": "りえちゃんのコロ動画"
+      },
+      "blurb": {
+        "en": "Six little corgi films for Rie. Each one plays once until she has seen them all.",
+        "ja": "りえちゃんへ、コーギーの短い動画6本。ぜんぶ見るまで同じのは出てこない。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/koro-films/",
+      "awesome": true,
+      "unique": true,
+      "steps": {
+        "en": [
+          "Tap Watch and a new corgi film plays",
+          "Tap Next, or let it finish, for the next one",
+          "Open History to watch an old favourite again"
+        ],
+        "ja": [
+          "「見る」をタップすると新しい動画が始まる",
+          "「次へ」か最後まで見ると次の動画へ",
+          "「見たもの」でお気に入りをもう一度"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-28",
+      "icon": "🎬",
+      "shot": true
+    },
+    {
+      "id": "studio",
+      "room": "lounge",
+      "name": {
+        "en": "Studio",
+        "ja": "スタジオ"
+      },
+      "blurb": {
+        "en": "My ten-room picture portfolio. Open a room, swipe through, keep favourites, ask about a piece.",
+        "ja": "10の部屋の絵のポートフォリオ。部屋を開いてスワイプ、お気に入りを残して、作品について問い合わせ。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/studio/",
+      "awesome": true,
+      "steps": {
+        "en": [
+          "Tap a room to open it",
+          "Tap a picture, then swipe; tap ♡ Keep to save favourites",
+          "Tap Ask about this to send an email about that piece"
+        ],
+        "ja": [
+          "部屋をタップして開く",
+          "絵をタップしてスワイプ。♡で保存",
+          "「この作品について聞く」でメールを送る"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-28",
+      "icon": "🖼️",
+      "shot": true
+    },
+    {
+      "id": "family-files",
+      "room": "study",
+      "name": {
+        "en": "Family Files",
+        "ja": "家族のファイル"
+      },
+      "blurb": {
+        "en": "The Lawson 100 film for Masa, the Koro and Mugi booklet for Rie, and the photos, all in one place.",
+        "ja": "マサへのローソン100の動画、りえちゃんへのコロとムギの冊子、写真をひとまとめに。"
+      },
+      "url": "https://gutsmcd-cmd.github.io/family-files/",
+      "steps": {
+        "en": [
+          "Press play to watch the film, or Save the film",
+          "Read the booklet on the page or save the PDF",
+          "Tap a photo to see it big, or save all photos as a zip"
+        ],
+        "ja": [
+          "再生で動画を見る、または保存",
+          "冊子をその場で読む、またはPDFを保存",
+          "写真をタップで大きく、zipでまとめて保存"
+        ]
+      },
+      "kind": "web",
+      "added": "2026-10-28",
+      "icon": "📁",
+      "shot": true
+    }
+  ],
+  "rooms": [
+    {
+      "id": "attic",
+      "name": {
+        "en": "Attic",
+        "ja": "屋根裏"
+      },
+      "lead": {
+        "en": "Experiments and things still being built. Peek, but mind the dust.",
+        "ja": "実験中・制作中のもの。のぞいてもいいけど、ほこりに注意。"
+      }
+    },
+    {
+      "id": "study",
+      "name": {
+        "en": "Study",
+        "ja": "書斎"
+      },
+      "lead": {
+        "en": "Notes, words, dates and things you sit down to learn.",
+        "ja": "メモ、ことば、日付、腰を据えて学ぶもの。"
+      }
+    },
+    {
+      "id": "lounge",
+      "name": {
+        "en": "Lounge",
+        "ja": "居間"
+      },
+      "lead": {
+        "en": "Ask the AIs, translate, read big, breathe.",
+        "ja": "AIに聞く、翻訳する、大きく読む、ひと息つく。"
+      }
+    },
+    {
+      "id": "workshop",
+      "name": {
+        "en": "Workshop",
+        "ja": "工房"
+      },
+      "lead": {
+        "en": "Photos, videos and PDFs fixed in one pass.",
+        "ja": "写真・動画・PDFを一発で整える。"
+      }
+    },
+    {
+      "id": "kitchen",
+      "name": {
+        "en": "Kitchen",
+        "ja": "台所"
+      },
+      "lead": {
+        "en": "Everyday jobs: timers, lists, bills, the trash rota.",
+        "ja": "毎日の用事。タイマー、リスト、割り勘、ごみ当番。"
+      }
+    },
+    {
+      "id": "game",
+      "name": {
+        "en": "Game Room",
+        "ja": "遊び部屋"
+      },
+      "lead": {
+        "en": "The basement. Calm games and odd little worlds.",
+        "ja": "地下室。おだやかなゲームと小さな世界。"
+      }
+    }
+  ]
+}
