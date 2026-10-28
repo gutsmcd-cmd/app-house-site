@@ -1521,6 +1521,36 @@
    "added": "2026-10-28",
    "shot": true,
    "apk": "https://gutsmcd-cmd.github.io/free-apps/apk/koro-corgi.apk"
+  },
+  {
+   "id": "pet-house",
+   "room": "game",
+   "name": {
+    "en": "Pet House",
+    "ja": "ペットハウス"
+   },
+   "blurb": {
+    "en": "Visit Mugi the corgi and Mizu the axolotl at home in Namba.",
+    "ja": "難波の家で、コーギーのムギとウーパールーパーのミズに会える。"
+   },
+   "url": "https://gutsmcd-cmd.github.io/pet-house/",
+   "awesome": true,
+   "unique": true,
+   "steps": {
+    "en": [
+     "Ring the bell and both pets come",
+     "Pet Mugi, drag her ball, teach her a dance",
+     "Tap the glass to feed or wave at Mizu"
+    ],
+    "ja": [
+     "ベルを鳴らすと2匹が来る",
+     "ムギをなでて、ボールで遊んで、ダンスを教える",
+     "ミズにエサをあげたり手をふったり"
+    ]
+   },
+   "kind": "web",
+   "added": "2026-10-28",
+   "icon": "🐕"
   }
  ],
  "rooms": [
