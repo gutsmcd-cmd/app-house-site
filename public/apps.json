@@ -1551,6 +1551,37 @@
    "kind": "web",
    "added": "2026-10-28",
    "icon": "🐕"
+  },
+  {
+   "id": "koro-films",
+   "room": "game",
+   "name": {
+    "en": "Koro Films for Rie",
+    "ja": "りえちゃんのコロ動画"
+   },
+   "blurb": {
+    "en": "Six little corgi films for Rie. Each one plays once until she has seen them all.",
+    "ja": "りえちゃんへ、コーギーの短い動画6本。ぜんぶ見るまで同じのは出てこない。"
+   },
+   "url": "https://gutsmcd-cmd.github.io/koro-films/",
+   "awesome": true,
+   "unique": true,
+   "steps": {
+    "en": [
+     "Tap Watch and a new corgi film plays",
+     "Tap Next, or let it finish, for the next one",
+     "Open History to watch an old favourite again"
+    ],
+    "ja": [
+     "「見る」をタップすると新しい動画が始まる",
+     "「次へ」か最後まで見ると次の動画へ",
+     "「見たもの」でお気に入りをもう一度"
+    ]
+   },
+   "kind": "web",
+   "added": "2026-10-28",
+   "icon": "🎬",
+   "shot": true
   }
  ],
  "rooms": [
