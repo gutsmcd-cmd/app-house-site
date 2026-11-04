@@ -32,8 +32,9 @@
       "icon": "🎙️",
       "ai": {
         "mb": 148,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 148 MB.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約148MB。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 148 MB (the AI is about 102 MB of that).",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約148MB（うちAIは約102MB）。",
+        "aiMb": 102
       }
     },
     {
@@ -414,8 +415,9 @@
       "icon": "🔍",
       "ai": {
         "mb": 52,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 52 MB.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約52MB。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 52 MB (the AI is about 7 MB of that).",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約52MB（うちAIは約7MB）。",
+        "aiMb": 7
       }
     },
     {
@@ -542,8 +544,9 @@
       "icon": "✨",
       "ai": {
         "mb": 46,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 46 MB.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約46MB。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 46 MB (the AI is about 19 MB of that).",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約46MB（うちAIは約19MB）。",
+        "aiMb": 19
       }
     },
     {
@@ -577,8 +580,9 @@
       "icon": "🖼️",
       "ai": {
         "mb": 320,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 320 MB. ⚠️ This is a large download, so please use Wi-Fi.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約320MB。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 320 MB (the AI is about 272 MB of that). ⚠️ This is a large download, so please use Wi-Fi.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約320MB（うちAIは約272MB）。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。",
+        "aiMb": 272
       }
     },
     {
@@ -843,8 +847,9 @@
       "icon": "🩹",
       "ai": {
         "mb": 249,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 249 MB. ⚠️ This is a large download, so please use Wi-Fi.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約249MB。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 249 MB (the AI is about 222 MB of that). ⚠️ This is a large download, so please use Wi-Fi.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約249MB（うちAIは約222MB）。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。",
+        "aiMb": 222
       }
     },
     {
@@ -877,8 +882,9 @@
       "icon": "✂️",
       "ai": {
         "mb": 130,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 130 MB.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約130MB。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 130 MB (the AI is about 71 MB of that).",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約130MB（うちAIは約71MB）。",
+        "aiMb": 71
       }
     },
     {
@@ -1290,8 +1296,9 @@
       "icon": "📷",
       "ai": {
         "mb": 231,
-        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 231 MB. ⚠️ This is a large download, so please use Wi-Fi.",
-        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約231MB。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。"
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 231 MB (the AI is about 145 MB of that). ⚠️ This is a large download, so please use Wi-Fi.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約231MB（うちAIは約145MB）。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。",
+        "aiMb": 145
       }
     },
     {
