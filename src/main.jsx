@@ -136,6 +136,7 @@ function Preview({ data, lang, id }) {
         {lang === 'en' && a.name.ja !== a.name.en && <p class="alt">{a.name.ja}</p>}
         <Badges a={a} lang={lang} />
         <p class="desc">{a.blurb[lang]}</p>
+        {a.ai && <p class={a.ai.mb > 200 ? 'ainote big' : 'ainote'}>🧠 {a.ai[lang]}</p>}
         <h3>{T.how[lang]}</h3>
         <ol class="steps">{steps.map((s) => <li>{s}</li>)}</ol>
         {a.soon ? <p class="note">{T.soonNote[lang]}</p> : <div class="acts">

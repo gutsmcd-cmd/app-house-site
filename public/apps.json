@@ -29,7 +29,12 @@
       },
       "kind": "web",
       "added": "2026-10-25",
-      "icon": "🎙️"
+      "icon": "🎙️",
+      "ai": {
+        "mb": 148,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 148 MB.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約148MB。"
+      }
     },
     {
       "id": "three-things",
@@ -358,10 +363,10 @@
         "ja": "わかりやすく"
       },
       "blurb": {
-        "en": "Turns hard text into plain, easy words.",
-        "ja": "むずかしい文を、わかりやすく。"
+        "en": "Turns hard text into plain, easy words. Needs internet (online AI on Universe 74).",
+        "ja": "むずかしい文を、わかりやすく。インターネットが必要です（Universe 74のオンラインAI）。"
       },
-      "url": "https://gutsmcd-cmd.github.io/wakariyasuku/",
+      "url": "https://gutsmcd-cmd.github.io/universe-74/",
       "awesome": false,
       "unique": true,
       "steps": {
@@ -406,7 +411,12 @@
         ]
       },
       "kind": "web",
-      "icon": "🔍"
+      "icon": "🔍",
+      "ai": {
+        "mb": 52,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 52 MB.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約52MB。"
+      }
     },
     {
       "id": "long-shot",
@@ -494,7 +504,12 @@
       },
       "kind": "web",
       "added": "2026-10-25",
-      "icon": "🎞️"
+      "icon": "🎞️",
+      "ai": {
+        "mb": 33,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 33 MB.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約33MB。"
+      }
     },
     {
       "id": "kukkiri",
@@ -524,7 +539,12 @@
       },
       "kind": "web",
       "added": "2026-10-25",
-      "icon": "✨"
+      "icon": "✨",
+      "ai": {
+        "mb": 46,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 46 MB.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約46MB。"
+      }
     },
     {
       "id": "moms-photo-studio",
@@ -554,7 +574,12 @@
       },
       "kind": "web",
       "added": "2026-10-25",
-      "icon": "🖼️"
+      "icon": "🖼️",
+      "ai": {
+        "mb": 320,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 320 MB. ⚠️ This is a large download, so please use Wi-Fi.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約320MB。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。"
+      }
     },
     {
       "id": "collage-chou",
@@ -815,7 +840,12 @@
         ]
       },
       "kind": "web",
-      "icon": "🩹"
+      "icon": "🩹",
+      "ai": {
+        "mb": 249,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 249 MB. ⚠️ This is a large download, so please use Wi-Fi.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約249MB。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。"
+      }
     },
     {
       "id": "kirinuki",
@@ -844,7 +874,12 @@
         ]
       },
       "kind": "web",
-      "icon": "✂️"
+      "icon": "✂️",
+      "ai": {
+        "mb": 130,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 130 MB.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約130MB。"
+      }
     },
     {
       "id": "iroawase",
@@ -1252,7 +1287,12 @@
       },
       "kind": "web",
       "added": "2026-10-25",
-      "icon": "📷"
+      "icon": "📷",
+      "ai": {
+        "mb": 231,
+        "en": "Includes an on-device AI that runs on your phone, so nothing is sent anywhere. Download size: about 231 MB. ⚠️ This is a large download, so please use Wi-Fi.",
+        "ja": "AIがこの端末の中で動きます（外に何も送りません）。ダウンロードサイズ：約231MB。 ⚠️ 大きなダウンロードです。Wi-Fiでのダウンロードをおすすめします。"
+      }
     },
     {
       "id": "deka-moji",

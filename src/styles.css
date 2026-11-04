@@ -130,3 +130,4 @@ footer{margin-top:auto;padding:18px;text-align:center;font-size:.85rem;opacity:.
 .dark .spot.on{box-shadow:0 0 0 6px var(--pink),0 0 0 9px #000,0 0 30px 8px #ff5fa288}
 .dark .menu{background:#232733;color:#dfe3ee;border-color:#555}
 .season-halloween .hint{color:#f1e9ff;opacity:.9}
+.ainote{max-width:60ch;padding:.6em .8em;border-radius:12px;background:#e8f8ee;border:2px solid #3cb371}.ainote.big{background:#ffe8f2;border-color:#e75480}
